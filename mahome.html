@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>CTF - MISSION:ASTER</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Quicksand:wght@300;400;600&display=swap');
+
+        body {
+            background-color: #0c0d12;
+            color: #e0e0e0;
+            font-family: 'Quicksand', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            border: 1px solid #2a475e;
+            padding: 40px;
+            background: linear-gradient(180deg, #0c0d12 0%, #161923 100%);
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.1);
+        }
+
+        h1, h2 {
+            font-family: 'Orbitron', sans-serif;
+            color: #00d4ff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 1px solid #2a475e;
+            padding-bottom: 10px;
+        }
+
+        h1 { text-align: center; font-size: 2em; }
+
+        blockquote {
+            font-style: italic;
+            border-left: 4px solid #f39c12;
+            padding: 10px 20px;
+            background: rgba(243, 156, 18, 0.05);
+            margin: 20px 0;
+        }
+
+        .statue-box {
+            border: 2px dashed #00d4ff;
+            padding: 20px;
+            margin: 20px 0;
+            background: rgba(0, 212, 255, 0.05);
+        }
+
+        .warning { color: #ff4b2b; font-weight: bold; }
+        .highlight { color: #f39c12; }
+        
+        code {
+            background: #1b2838;
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: #66c0f4;
+        }
+
+        hr { border: 0; border-top: 1px solid #2a475e; margin: 30px 0; }
+
+        @media print {
+            body { background: white; color: black; }
+            .container { border: none; box-shadow: none; background: white; }
+            h1, h2 { color: #005f73; border-bottom: 1px solid #005f73; }
+            .statue-box { border: 2px solid #005f73; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌌 JOURNAL D'EXPÉDITION : MISSION "ASTER"</h1>
+        <p style="text-align: center;"><strong>[ INSPIRÉ DE L'UNIVERS D'OUTER WILDS ]</strong></p>
+
+        <blockquote>
+            "L'univers est bien plus vieux que nous, et nous n'en sommes que les observateurs éphémères. Mais aujourd'hui, l'observation ne suffit plus. Il faut comprendre avant que le dernier feu ne s'éteigne."
+        </blockquote>
+
+        <h2>📜 HISTOIRE DU SIGNAL</h2>
+        <p>Les capteurs de l'Observatoire ont détecté une anomalie réseau sans précédent provenant d'une ancienne structure Nomai. Ce flux de données, baptisé <span class="highlight">Projet Aster</span>, semble être la mémoire résiduelle d'un membre de ce peuple disparu.</p>
+        <p>Cependant, le signal est instable. Il est lié à l'activité de notre soleil : dès que vous initiez la liaison, vous entrez dans une fenêtre temporelle critique. L'agent Aster a laissé un serveur derrière lui, protégé avec une rigueur inhabituelle, comme s'il craignait que ces informations ne tombent entre de mauvaises mains avant la fin du cycle.</p>
+
+        <div class="statue-box">
+            <h2>🗿 LE LIEN MÉMORIEL</h2>
+            <p>Votre conscience est liée à une statue Nomai. Ce lien est précieux mais fragile :</p>
+            <ul>
+                <li><strong>Le Compteur de Synchronisation</strong> : La statue ne pourra supporter que <span class="highlight">10 synchronisations</span>.</li>
+                <li><strong>Le Sceau de l'Explorateur</strong> : Si vous extrayez le Flag à temps, un <strong>Certificat d'Exploration</strong> sera généré.</li>
+                <li><strong>Le Vide</strong> : Si la statue se brise, votre réussite restera anonyme, perdue dans le vide spatial.</li>
+            </ul>
+        </div>
+
+        <h2>⚖️ LES LOIS DE L'EXPLORATION</h2>
+        <h3>⏳ La Loi du Temps</h3>
+        <p>Le cycle solaire est immuable. Vous disposez de <span class="warning">22 minutes</span>. Passé ce délai, la supernova se déclenchera et le système se réinitialisera.</p>
+
+        <h3>🚫 La Loi de Prudence</h3>
+        <p>Le système <strong>IDS Secteur 7</strong> surveille vos tentatives. Chaque erreur provoque un gel de votre station pendant <span class="warning">31 secondes</span>.</p>
+
+        <h3>🧩 La Loi de l'Observation</h3>
+        <p>L'interface <code>mission-net</code> est votre seul lien avec la réalité d'Aster. Tout ce qui transite dans l'éther porte une trace.</p>
+
+        <hr>
+
+        <h2>🛠️ INSTRUMENTS DE BORD</h2>
+        <ul>
+            <li><strong>Docker</strong> : Le moteur de virtualisation doit être actif.</li>
+            <li><strong>Privilèges Sudo</strong> : Accès administrateur requis dans le docker.</li>
+            <li><strong>Patience</strong> : Vertu indispensable à tout explorateur.</li>
+        </ul>
+
+        <p style="text-align: center; margin-top: 50px; font-size: 0.9em; opacity: 0.7;">
+            <em>"On ne sait pas pourquoi nous sommes ici, mais il est fascinant de le découvrir."</em>
+        </p>
+<p style="text-align: center;">
+    <a href="URL_DU_LIEN_RAW" style="color: #00d4ff; text-decoration: none; border: 1px solid #00d4ff; padding: 10px 20px; border-radius: 5px;">
+        🚀 INITIALISER LA LIAISON (Télécharger .sh)
+    </a>
+</p>
+    </div>
+<div style="text-align: center; margin: 30px 0;">
+    <a href="https://github.com/YohanHery/Projet-de-licence" 
+       style="background: transparent; border: 2px solid #f39c12; color: #f39c12; padding: 15px 30px; 
+              font-family: 'Orbitron', sans-serif; text-decoration: none; display: inline-block;
+              transition: 0.3s; box-shadow: 0 0 10px rgba(243, 156, 18, 0.3);">
+        DÉCOUVERTE DE NOUVEAUX HORIZONS
+    </a>
+    <p style="font-size: 0.8em; color: #f39c12; margin-top: 10px;">
+        [  <a href="www.linkedin.com/in/yohan-hery" style="background: transparent; color: #f39c12;
+             text-decoration: none; display: inline-block;
+              transition: 0.3s;"> Copyright yohan-hery</a>  ]
+    </p>
+</div>
+</body>
+</html>
